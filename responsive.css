@@ -280,7 +280,6 @@
 }
 
 @media(max-width: 425px) {
-    
     .menu-items {
         width: 50%;
     }
@@ -296,6 +295,14 @@
 
     section.description h2 {
         margin-top: 1.6rem;
+    }
+
+    /* section.timeline {
+        margin-top: 6rem;
+    } */
+
+    section.timeline .line {
+        height: 4.2rem;
     }
 
     .point div.text p {
@@ -354,10 +361,18 @@
     .point div.text p {
         width: 20rem;
     }
+
+    section.timeline .line {
+        height: 4rem;
+    }
 }
 
 @media(max-width: 336px) {
     .point div.text p {
         width: 17rem;
+    }
+
+    section.timeline .line {
+        height: 3.8rem;
     }
 }
