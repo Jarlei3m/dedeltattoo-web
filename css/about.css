@@ -1,5 +1,5 @@
-body {
-    background-image: url('./images/bg-about.jpg');
+body#about {
+    background-image: url('../images/bg-about.jpg');
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -7,12 +7,12 @@ body {
     height: 100vh;
 
     padding: 3rem 8rem;
-    overflow: hidden;
+    overflow: unset;
 }
 
-body::after{
+body#about::after{
     content:'';
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
 
