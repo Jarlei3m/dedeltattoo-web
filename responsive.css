@@ -300,7 +300,7 @@
     }
 
     section.timeline .line {
-        height: 3.8rem;
+        height: 3.4rem;
     }
 
     .point div.text p {
@@ -356,14 +356,14 @@
     .point div.text p {
         width: 20rem;
     }
+
+    section.timeline .line {
+        height: 3.2rem;
+    }
 }
 
 @media(max-width: 336px) {
     .point div.text p {
         width: 17rem;
-    }
-
-    section.timeline .line {
-        height: 3.6rem;
     }
 }
