@@ -15,7 +15,7 @@
     list-style-type: none;
 }
 
-body {
+body#index {
     background-image: url('../images/arm-bg.jpg');
     background-position: center center;
     background-size: cover;
@@ -27,7 +27,7 @@ body {
     overflow: hidden;
 }
 
-body::after{
+body#index::after{
     content:'';
     position: fixed;
     top: 0;

@@ -1,0 +1,301 @@
+#work {
+    background-image: url('../images/tattoo-eqp.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+
+    height: 100vh;
+
+    padding: 3rem 8rem;
+    overflow: unset;
+}
+
+#work::after{
+    content:'';
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #0c0c0c 50%);
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.work {
+    height: 90%;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.presentation {
+    text-align: center;
+
+    margin-top: 4rem;
+}
+
+.title-container {
+    font-family: 'New Rocker', cursive;
+
+}
+
+.title-container h1 {
+    font-size: 8rem;
+    line-height: 1.5;
+}
+
+.title-container p {
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.title-container a{
+    color: #c92f46;
+    cursor: pointer;
+
+    transition: color 0.3s ease;
+}
+
+.title-container a:hover {
+    color: #ac0f26;
+}
+
+/* MODAL */
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(39, 39, 39);
+    z-index: 20;
+
+    transition: all 0.3s ease-out;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal .image {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.modal .img-container{
+    margin: auto;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    max-width: 700px;
+    max-height: 700px;
+
+    display: flex;
+}
+
+.modal .image img {
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.modal .image img:hover {
+    border: none;
+    cursor: unset;
+}
+
+.modal i#close {
+    font-size: 3rem;
+    position: fixed;
+
+    right: 6rem;
+    top: 6rem;
+
+    color: #fff;
+    cursor: pointer;
+
+    z-index: 20;
+}
+
+.modal .image .arrow-modal {
+    z-index: 20;
+    font-size: 5rem;
+
+    width: 830px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal .image i#arrow-modal-left,
+.modal .image i#arrow-modal-right {
+    cursor: pointer;
+}
+
+/* Gallery */
+
+.gallery {
+    margin: 5rem;
+}
+
+.gallery summary {
+    font-family: 'New Rocker', cursive;
+
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+
+    margin-bottom: 3rem;
+    outline: none;
+
+    cursor: pointer;
+    display: inline-block;
+}
+
+.gallery summary.more {
+    font-size: 2rem;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.gallery summary.more::-webkit-details-marker {
+    display: none;
+}
+
+/* Photo gallery */
+
+.photos-container {
+    text-align: center;
+
+    margin-bottom: 4rem;
+}
+
+.photos-container .photos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-self: self-end;
+    row-gap: 4rem;
+
+    margin-bottom: 4rem;
+
+    transition: all 0.3s ease-out;
+}
+
+.photo img{
+    transition: border 0.3s ease-out;
+
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.photo img:hover {
+    border: 1px solid var(--primary-color);
+}
+
+.photos-container img {
+    width: 100%;
+    max-width: 200px;
+    height: 300px;
+}
+
+/* videos gallery */
+.videos-container {
+    text-align: center;
+}
+
+.videos-container .videos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 4rem;
+
+    margin-bottom: 4rem;
+
+    transition: all 0.3s ease-out;
+}
+
+.video {
+    height: 20rem;
+}
+
+.video video {
+    height: 100%;
+    width: 60%;
+    min-width: 32rem;
+
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+
+    transition: border 0.3s ease-out;
+}
+
+.video video:hover {
+    border-left: 1px solid var(--primary-color);
+}
+
+
+/* Testimony */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimony {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.testimony h3{
+    font-family: 'New Rocker', cursive;
+
+    font-size: 3rem;
+    color: #b6b5b5;
+    text-align: center;
+
+    margin-bottom: 4rem;
+}
+
+.testimony .quotes{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.8rem;
+}
+
+.quotes blockquote {
+    max-width: 30rem;
+
+    color: #b6b5b5;
+    font-size: 1.6rem;
+    line-height: 1.3;
+
+}
