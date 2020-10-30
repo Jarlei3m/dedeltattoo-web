@@ -1,5 +1,6 @@
 const menuIcon = document.querySelector('.menu');
 const menuItems = document.querySelector('.menu-items');
+const bodyOverflow = document.querySelector('#work');
 
 const nav = document.querySelectorAll('.menu-items li') 
 
@@ -7,6 +8,7 @@ const nav = document.querySelectorAll('.menu-items li')
 menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle('close');
     menuItems.classList.toggle('show');
+    bodyOverflow.classList.toggle('overflow')
 });
 
 // ARROW ICON

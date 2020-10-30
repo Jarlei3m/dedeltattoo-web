@@ -111,7 +111,7 @@ nav ul li a:hover {
 }
 
 .button {
-    position: fixed;
+    position: absolute;
     top: 3.5rem;
     right: 8rem;
 
@@ -122,6 +122,12 @@ nav ul li a:hover {
     color: white;
 
     transition: background-color 0.3s ease-out;
+}
+
+.button i {
+    font-size: 1.5rem;
+    margin-left: 6px;
+
 }
 
 
@@ -148,7 +154,7 @@ nav ul li a.button:hover {
     line-height: 1.6;
 }
 
-h1 .secondary-title {
+.secondary-title {
     color: var(--primary-color);
 }
 
