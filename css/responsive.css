@@ -71,6 +71,7 @@
 
     .menu.close {
         transform: rotate(180deg);
+        z-index: 15;
     }
 
     .menu.close .btn-line:nth-child(1) {
@@ -118,6 +119,8 @@
     .menu-items.show{
         visibility: visible;
         transform: translate3d(0, 0, 0);
+
+        z-index: 14;
     }
 
     body#work.overflow {
@@ -443,10 +446,6 @@
 @media(max-width:510px) {
     body#about {
         padding: 3rem 6rem;
-    }
-
-    section.timeline {
-        margin: 5rem 0rem;
     }
 
     section.timeline .line {
