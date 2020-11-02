@@ -68,7 +68,7 @@ body#about::after{
 }
 
 .timeline {
-    margin-top: 20.4rem;
+    margin-top: 22.4rem;
 
     display: flex;
     justify-content: center;
@@ -152,7 +152,7 @@ body#about::after{
 .timeline .point:hover .text.active {
     visibility: visible;
     transform: translate3d(0, 0, 0);
-}
+}       
 
 .point .text p {
     width: 14rem;
@@ -167,8 +167,36 @@ body#about::after{
 
     background-color: rgba(90, 90, 90, 0.3);
 }
+/* 
+.point .text p.studio-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
-.point .text h4 {
+.point .image.active img {
+    width: 17rem;
+    height: 17rem;
+
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+
+}
+
+.timeline .point .image {
+    visibility: hidden;
+
+    transform: translate3d(0, -8%, 0);
+    transition: all 0.4s ease-in-out;
+}
+
+.timeline .point:hover .image.active{
+    visibility: visible;
+    transform: translate3d(0, -15%, 0);
+}
+
+.point .text h4,
+.point .image h4 {
     color: var(--primary-color);
 
     font-size: 2rem;
