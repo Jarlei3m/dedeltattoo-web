@@ -400,7 +400,7 @@
     }
 
     .timeline .point.invert:hover div.image.active {
-        transform: translate3d(14%, 0, 0);
+        transform: translate3d(20%, 0, 0);
     }
 
     body#work .menu {
