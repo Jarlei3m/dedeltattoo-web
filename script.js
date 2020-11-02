@@ -2,13 +2,13 @@ const menuIcon = document.querySelector('.menu');
 const menuItems = document.querySelector('.menu-items');
 const bodyOverflow = document.querySelector('#work');
 
-const nav = document.querySelectorAll('.menu-items li') 
+const nav = document.querySelectorAll('.menu-items li'); 
 
 // menu burguer 
 menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle('close');
     menuItems.classList.toggle('show');
-    bodyOverflow.classList.toggle('overflow')
+    bodyOverflow.classList.toggle('overflow');
 });
 
 // ARROW ICON
@@ -17,14 +17,14 @@ menuIcon.addEventListener('click', () => {
 const arrowPhotos = document.querySelector('#photos-down');
 
 arrowPhotos.addEventListener('click', () => {
-    arrowPhotos.classList.toggle('fa-angle-double-up');
+    arrowPhotos.classList.toggle('opened');
 });
 
 // videos
 const arrowVideos = document.querySelector('#videos-down');
 
 arrowVideos.addEventListener('click', () => {
-    arrowVideos.classList.toggle('fa-angle-double-up')
+    arrowVideos.classList.toggle('opened');
 })
 
 // modal 
