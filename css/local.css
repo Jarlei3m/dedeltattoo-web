@@ -5,6 +5,7 @@ body#local {
     background-attachment: fixed;
 
     height: 100vh;
+    width: 100vw;
 
     padding: 3rem 8rem;
     overflow: hidden;

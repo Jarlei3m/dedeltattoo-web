@@ -34,7 +34,6 @@
         max-width: 620px;
         max-height: 620px;
     }
-
 }
 
 @media(max-width: 900px) {
@@ -278,10 +277,6 @@
         line-height: 1.4;
     }
 
-    body#work {
-        padding: 2rem 4rem;
-    }
-
     div.photos-container img {
         max-width: 130px;
         height: 180px;
@@ -406,10 +401,6 @@
         transform: translate3d(20%, 0, 0);
     }
 
-    body#work .menu {
-        right: 4.3rem;
-    }
-
     body#work::after{
         width: 150vw;
         height: 150vh;
@@ -417,6 +408,10 @@
 
     div.title-container h1 {
         line-height: unset;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     div.photos-container img {
@@ -425,7 +420,8 @@
     }
 
     div.photos-container .photos {
-        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        column-gap: 1.5rem;
     }
 
     .modal .image div.arrow-modal {
@@ -509,15 +505,6 @@
         background-color: rgba(17, 17, 17, 0.9);
     }
 
-    section.description img {
-        width: 16rem;
-        height: 16rem;
-    }
-
-    section.description h1 {
-        font-size: 5rem;
-    }
-
     section.description h2 {
         margin: 1.6rem;
     }
@@ -537,7 +524,7 @@
     }
 
     div.photos-container .photos {
-        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     }
 
     div.videos-container .videos {
@@ -592,8 +579,8 @@
     }
 
     section.description img {
-        width: 15rem;
-        height: 15rem;
+        width: 17rem;
+        height: 17rem;
 
         margin-right: 8px;
     }

@@ -5,6 +5,7 @@ body#about {
     background-attachment: fixed;
 
     height: 100vh;
+    width: 100vw;
 
     padding: 3rem 8rem;
     overflow: unset;
@@ -167,12 +168,6 @@ body#about::after{
 
     background-color: rgba(90, 90, 90, 0.3);
 }
-/* 
-.point .text p.studio-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 .point .image.active img {
     width: 17rem;
