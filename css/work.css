@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 #work {
     background-image: url('../images/tattoo-eqp.jpg');
     background-position: bottom;

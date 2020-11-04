@@ -467,7 +467,9 @@
     }
 
     div.videos-container .videos {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .modal .image div.arrow-modal {
@@ -539,10 +541,6 @@
         min-width: 26rem;
     }
 
-    div.videos-container .videos {
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    }
-
     .modal .image div.arrow-modal {
         width: 350px
     }
@@ -595,13 +593,6 @@
 
     div.video video {
         width: 24rem;
-    }
-
-    .gallery div.videos-container .videos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 
     main.local h3 {
